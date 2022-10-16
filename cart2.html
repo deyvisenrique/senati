@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Oxence - Web Design Company HTML Template || Contact Us</title>
+    <title>Oxence - Web Design Company HTML Template || Cart</title>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <!-- Google Fonts -->
@@ -172,11 +172,11 @@
         <section class="page-banner-area pt-245 rpt-150 pb-170 rpb-100 rel z-1 bgc-lighter text-center">
             <div class="container">
                 <div class="banner-inner rpt-10">
-                    <h1 class="page-title wow fadeInUp delay-0-2s">Conta<span>ct Us</span></h1>
+                    <h1 class="page-title wow fadeInUp delay-0-2s">Shopping <span>Cart</span></h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center wow fadeInUp delay-0-4s">
                             <li class="breadcrumb-item"><a href="index.html">home</a></li>
-                            <li class="breadcrumb-item active">Contact</li>
+                            <li class="breadcrumb-item active">Shopping Cart</li>
                         </ol>
                     </nav>
                 </div>
@@ -190,182 +190,115 @@
         <!-- Page Banner End -->
         
         
-        <!-- Contact Us Page Area start -->
-        <section class="contact-us-page-area py-130">
+        <!-- Shopping Cart Area start -->
+        <section class="shopping-cart-area py-130 rel z-1">
             <div class="container">
-                <div class="row align-items-end justify-content-between">
-                    <div class="col-lg-7">
-                        <div class="contact-content rmb-65 wow fadeInRight delay-0-2s">
-                            <div class="section-title mb-25">
-                                <span class="sub-title style-two mb-15">Contact Us</span>
-                                <h2>Let’s Start New Project or work Together! Contact With us</h2>
-                            </div>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda tiumes totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
-                            <form id="contactForm" class="contactForm z-1 rel"  action="assets/php/form-process.php" name="contactForm" method="post">
-                                <div class="row pt-15">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="name">Full Name</label>
-                                            <input type="text" id="name" name="name" class="form-control" value="" placeholder="Michael C. Coleman" required data-error="Please enter your name">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                <div class="shoping-table mb-50 wow fadeInUp delay-0-2s">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Images</th>
+                                <th>Product</th>
+                                <th>Unit Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="assets/images/widget/news1.jpg" alt="Product"></td>
+                                <td><span class="title">Fitness UI Kits</span></td>
+                                <td><span class="price">70</span></td>
+                                <td>
+                                    <div class="quantity-input">
+                                        <button class="quantity-down">--</button>
+                                        <input class="quantity" type="text" value="1" name="quantity">
+                                        <button class="quantity-up">+</button>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="email">Email Address</label>
-                                            <input type="email" id="email" name="email" class="form-control" value="" placeholder="support@gmail.com" required data-error="Please enter your Email">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                                </td>
+                                <td><b class="price">70</b></td>
+                                <td><button type="button" class="close">×</button></td>
+                            </tr>
+                            <tr>
+                                <td><img src="assets/images/widget/news2.jpg" alt="Product"></td>
+                                <td><span class="title">Dashboard UI</span></td>
+                                <td><span class="price">65</span></td>
+                                <td>
+                                    <div class="quantity-input">
+                                        <button class="quantity-down">--</button>
+                                        <input class="quantity" type="text" value="2" name="quantity">
+                                        <button class="quantity-up">+</button>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="phone_number">Phone Number</label>
-                                            <input type="text" id="phone_number" name="phone_number" class="form-control" value="" placeholder="+000 (123) 456 88">
-                                        </div>
+                                </td>
+                                <td><b class="price">130</b></td>
+                                <td><button type="button" class="close">×</button></td>
+                            </tr>
+                            <tr>
+                                <td><img src="assets/images/widget/news3.jpg" alt="Product"></td>
+                                <td><span class="title">Plugin for WordPress</span></td>
+                                <td><span class="price">80</span></td>
+                                <td>
+                                    <div class="quantity-input">
+                                        <button class="quantity-down">--</button>
+                                        <input class="quantity" type="text" value="1" name="quantity">
+                                        <button class="quantity-up">+</button>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                           <label for="select_subject">Select Requirments</label>
-                                           <select name="select_subject" id="select_subject">
-                                                <option value="default" selected="">Website customize</option>
-                                                <option value="Design">Design</option>
-                                                <option value="Development">Development</option>
-                                                <option value="SEO">SEO</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="message">Write Message</label>
-                                            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Write Message" required data-error="Please enter your Message"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group pt-5 mb-0">
-                                            <button type="submit" class="theme-btn w-100">Send Message <i class="fas fa-angle-double-right"></i></button>
-                                            <div id="msgSubmit" class="hidden"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </td>
+                                <td><b class="price">80</b></td>
+                                <td><button type="button" class="close">×</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row text-center text-lg-left align-items-center">
+                    <div class="col-lg-6">
+                        <div class="discount-wrapper mb-30 wow fadeInLeft delay-0-2s">
+                            <form action="#" class="d-sm-flex justify-content-center justify-content-lg-start">
+                                <input type="text" placeholder="Coupon Code" required>
+                                <button class="theme-btn flex-none" type="submit">apply Coupon <i class="fas fa-angle-double-right"></i></button>
                             </form>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="contact-info wow fadeInLeft delay-0-2s">
-                            <div class="contact-info-item style-two">
-                                <div class="icon">
-                                    <i class="fal fa-map-marker-alt"></i>
-                                </div>
-                                <div class="content">
-                                    <span class="title">Location</span>
-                                    <span class="text">55 Main Street, 2nd  Floor, E-Block, New York</span>
-                                </div>
-                            </div>
-                            <div class="contact-info-item style-two">
-                                <div class="icon">
-                                    <i class="far fa-envelope-open-text"></i>
-                                </div>
-                                <div class="content">
-                                    <span class="title">email address</span>
-                                    <span class="text">
-                                        <a href="mailto:support@gmail.com">supportweb@gmail.com</a><br>
-                                        <a href="mailto:websitebuilding.net">websitebuilding.net</a>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="contact-info-item style-two">
-                                <div class="icon">
-                                    <i class="far fa-phone"></i>
-                                </div>
-                                <div class="content">
-                                    <span class="title">Phone Number</span>
-                                    <span class="text">
-                                        Call <a href="calto:+000(123)45688">+000 (123) 456 88</a><br>
-                                        Whatsapp : +9632145789
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="follow-us">
-                                <h4>Follow Us</h4>
-                                <div class="social-style-two">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fab fa-behance"></i></a>
-                                </div>
-                            </div>
+                    <div class="col-lg-6">
+                        <div class="update-shopping mb-30 text-lg-end wow fadeInRight delay-0-2s">
+                            <a href="shop.html" class="theme-btn style-two my-5">shopping <i class="fas fa-angle-double-right"></i></a>
+                            <a href="shop.html" class="theme-btn my-5">update cart <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="shoping-cart-total pt-20 wow fadeInUp delay-0-2s">
+                            <h4 class="form-title mb-25 text-center">Cart Totals</h4>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Cart Subtotal</td>
+                                        <td><span class="price">280</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping Fee</td>
+                                        <td><span class="price">10.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vat</td>
+                                        <td>$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Order Total</strong></td>
+                                        <td><b class="price">290</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="checkout.html" class="theme-btn style-two mt-25 w-100">Proceed to checkout</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Contact Us Page Area end -->
-        
-        
-        <!-- Our Location Address Area start -->
-        <section class="our-location-address-area rel z-1">
-            <div class="container">
-                <div class="row medium-gap justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="location-address-item wow fadeInUp delay-0-2s">
-                            <div class="top-part">
-                                <img src="assets/images/contact/location1.png" alt="Location">
-                                <h5>New York</h5>
-                            </div>
-                            <div class="bottom-part">
-                                <ul>
-                                    <li><i class="fal fa-map-marker-alt"></i> 55 Main Street, New York</li>
-                                    <li><i class="far fa-envelope-open-text"></i> support@gmail.com</li>
-                                    <li><i class="far fa-phone"></i> +000 (123) 456 88</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="location-address-item wow fadeInUp delay-0-4s">
-                            <div class="top-part">
-                                <img src="assets/images/contact/location2.png" alt="Location">
-                                <h5>Australia Capital</h5>
-                            </div>
-                            <div class="bottom-part">
-                                <ul>
-                                    <li><i class="fal fa-map-marker-alt"></i> 55 Main Street, New York</li>
-                                    <li><i class="far fa-envelope-open-text"></i> support@gmail.com</li>
-                                    <li><i class="far fa-phone"></i> +000 (123) 456 88</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="location-address-item wow fadeInUp delay-0-6s">
-                            <div class="top-part">
-                                <img src="assets/images/contact/location3.png" alt="Location">
-                                <h5>South Africa</h5>
-                            </div>
-                            <div class="bottom-part">
-                                <ul>
-                                    <li><i class="fal fa-map-marker-alt"></i> 55 Main Street, New York</li>
-                                    <li><i class="far fa-envelope-open-text"></i> support@gmail.com</li>
-                                    <li><i class="far fa-phone"></i> +000 (123) 456 88</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Our Location Address Area end -->
-        
-        
-        <!-- Location Map Area Start -->
-        <div class="contact-page-map wow fadeInUp delay-0-2s">
-            <div class="our-location">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d142190.2862584524!2d-74.01298319978558!3d40.721725351435126!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1663473911885!5m2!1sen!2sbd" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        <!-- Location Map Area End -->
-        
+        <!-- Shopping Cart Area start -->
+
         
         <!-- Call to Action Area start -->
         <section class="call-to-action-area bgc-black pt-80 pb-50">
@@ -490,11 +423,6 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
-    
-    <!-- For Contact Form -->
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.js"></script>
 
 </body>
 </html>
