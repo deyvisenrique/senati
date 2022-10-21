@@ -4113,9 +4113,15 @@ h6, .h6 {
 
 .main-slider-active {
   width: 100%; }
-  .main-slider-active .slick-list {
-    overflow: visible; }
-
+  .main-slider-active .slick-list 
+  {
+    overflow: visible;
+  }
+  .slick-slide > div
+  {
+    min-height: 207px;
+    margin: 0 12px;
+  }
 .main-slider-dots {
   margin-top: -135px;
   max-width: -webkit-max-content;

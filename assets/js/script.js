@@ -32,6 +32,7 @@
     22. WOW Animation
     23. OnePage Nav
     24. Preloader
+    25. Core Six Slider
 -----------------------------------------------------------------------------------*/
 
 (function ($) {
@@ -263,11 +264,6 @@
                 ]
             });
         }
-        
-        $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-          $('.project-three-active').slick('setPosition');
-        })
-        
         
         // 12. Testimonial Two Slider
         if ($('.testimonial-two-active').length) {
@@ -502,7 +498,35 @@
             },1000);
         });
         
- 
+        // 25. Project Six Automatic Loop
+        if ($('.project-six-active').length) {
+            $('.project-six-active').slick({
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                centerMode: false,
+                speed: 1000,
+                slidesToShow: 5,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1199,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 3,
+                        }
+                    }
+                ]
+            });
+        }
     });
     
     
