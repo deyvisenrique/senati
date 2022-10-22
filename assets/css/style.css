@@ -656,11 +656,28 @@ a.theme-btn {
     color: #f1b000;
     font-size: 14px; }
 
+/**Project six arrows**/
+.arrow_row{
+  position:absolute;
+  margin-top: -7%;
+  margin-bottom: 10%;
+}
+.left{
+  float: left;
+  margin-left: -80px;
+}
+.right{
+  float: right;
+  margin-left: 1320px;
+}
 /*** Slick Dots ***/
 .slick-arrow {
   width: 55px;
   height: 55px;
-  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -673,8 +690,8 @@ a.theme-btn {
     color: white;
     background: #01c9f5;
     -webkit-box-shadow: 10px 0 60px rgba(118, 167, 19, 0.3);
-    box-shadow: 10px 0 60px rgba(118, 167, 19, 0.3); }
-
+    box-shadow: 10px 0 60px rgba(118, 167, 19, 0.3); 
+  }
 /*** Slick Dots ***/
 .slick-dots {
   -ms-flex-wrap: wrap;
@@ -8257,7 +8274,7 @@ h4.comment-title {
   .dark-version.home-one .project-item .details-btn:not(:hover) {
     color: #fc653c; }
   .dark-version.home-one .slick-arrow {
-    background: #fc653c; }
+    background: none; }
   .dark-version.home-one .footer-bottom,
   .dark-version.home-one .pricing-item-two,
   .dark-version.home-one .slick-arrow:hover,
