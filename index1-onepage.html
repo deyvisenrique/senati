@@ -13,7 +13,8 @@
     <link rel="shortcut icon" href="assets/images/favicon1.png" type="image/x-icon">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600&family=Kumbh+Sans:wght@400;500;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    
+    <!-- Button Close -->
+    <script src="https://kit.fontawesome.com/cd33816f91.js" crossorigin=""></script>
     <!-- Flaticon -->
     <link rel="stylesheet" href="assets/css/flaticon.min.css">
     <!-- Font Awesome -->
@@ -32,9 +33,36 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Modal -->
+    <link rel="stylesheet" href="assets/css/modalc.css">
     
 </head>
 <body class="home-one">
+
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal-wrap">
+            <div class="modal-tittle">
+                <h2>HOLA</h2>
+            </div>
+            <div class="usermod">
+                <div class="line"></div>
+                <i class="far fa-times-circle" id="close"></i>
+
+                <div class="use-content">
+                    <h2>¿CUAL ES TU NOMBRE?</h2>
+                    <p>Te daremos una asesoria personalizada</p>
+                    <form>
+                    <input type="name"  id="namem" placeholder="Esccribe tu nombre">
+                    <button type="submit">GUARDAR</button>
+                    </form>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="page-wrapper">
 
         <!-- Preloader -->
@@ -1053,6 +1081,9 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
+    
+    <!-- Modal -->
+    <script src="assets/js/prueba.js"></script>
 
 </body>
 </html>
