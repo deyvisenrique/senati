@@ -1,5 +1,5 @@
 <?php
-
+include('conexion.php'); 
 $errorMSG = "";
 
 // NAME
@@ -70,4 +70,29 @@ if ($success && $errorMSG == ""){
     }
 }
 
+
+?>
+<?php
+include('conexion.php'); 
+$n = $_POST["name"];
+$a = $_POST["phone_number"];
+$x = $_POST["email"];
+$z = $_POST["select_subject"];
+$c = $_POST["message"];
+if ($z == 1){
+    $z = "Website customize";
+} elseif ($e == 2){
+    $z = "Design";
+} elseif ($e == 3){
+    $z = "Development";
+} elseif ($e == 4){
+    $z = "SEO";
+};
+
+$instruccionSQL = $db->prepare("INSERT INTO Contacto(name,phone_number,email,select_subject,message) VALUES(?,?,?,?,?)");
+$instruccionSQL->execute(array($n,$a,$x,$z,$c));
+echo "<h4>". $n ." " .$a ."</h4>";
+echo "<h4>". $x ." ".$z . "</h4>";
+echo "<h5>" . $c ."</h5>";
+echo "Datos registrados" ."<br>";
 ?>
