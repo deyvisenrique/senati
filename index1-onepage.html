@@ -53,9 +53,11 @@
                 <div class="use-content">
                     <h2>¿CUAL ES TU NOMBRE?</h2>
                     <p>Te daremos una asesoria personalizada</p>
-                    <form>
-                    <input type="name"  id="namem" placeholder="Esccribe tu nombre">
+                    <form id="formmodal" method="dialog">
+                    <input id="nombremod" type="text" placeholder="ingrese su nombre">
                     <button type="submit">GUARDAR</button>
+                    
+                    
                     </form>
                 </div>
                 <div class="line"></div>
@@ -71,6 +73,7 @@
 
         <!-- main header -->
         <header class="main-header header-two">
+            
             <!--Header-Upper-->
             <div class="header-upper">
                 <div class="container clearfix">
@@ -191,7 +194,7 @@
                     <div class="container">
                         <div class="slider-content">
                             <span class="sub-title">25 Years of Experience in web design solutions</span>
-                            <h1>Digital web design solutions agency</h1>
+                            <h1 id="mod1" >Tenemos la mejor agencia de soluciones de diseño web digital para ti </h1>
                             <div class="slider-btns">
                                 <a href="contact.html" class="theme-btn">Get Started Us <i class="fas fa-angle-double-right"></i></a>
                                 <a href="services.html" class="theme-btn style-three">Explore Services <i class="fas fa-angle-double-right"></i></a>
@@ -212,7 +215,7 @@
                     <div class="container">
                         <div class="slider-content">
                             <span class="sub-title">25 Years of Experience in web design solutions</span>
-                            <h1>Digital web design solutions agency</h1>
+                            <h1 id="mod2">La mejor agencia de soluciones de diseño web para ti </h1>
                             <div class="slider-btns">
                                 <a href="contact.html" class="theme-btn">Get Started Us <i class="fas fa-angle-double-right"></i></a>
                                 <a href="services.html" class="theme-btn style-three">Explore Services <i class="fas fa-angle-double-right"></i></a>
@@ -233,7 +236,7 @@
                     <div class="container">
                         <div class="slider-content">
                             <span class="sub-title">25 Years of Experience in web design solutions</span>
-                            <h1>Digital web design solutions agency</h1>
+                            <h1 id="mod3">no te olvides de ver todos nuestros planes</h1>
                             <div class="slider-btns">
                                 <a href="contact.html" class="theme-btn">Get Started Us <i class="fas fa-angle-double-right"></i></a>
                                 <a href="services.html" class="theme-btn style-three">Explore Services <i class="fas fa-angle-double-right"></i></a>
@@ -267,7 +270,7 @@
             <div class="container">
                 <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
                     <span class="sub-title mb-10">Core Features</span>
-                    <h2>Amazing web design features</h2>
+                    <h2 id="mod4">Asombrosas funciones para ti</h2>
                 </div>
                 <div class="row row-cols-xl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
                     <div class="col wow fadeInUp delay-0-2s">
@@ -326,7 +329,7 @@
                         <div class="about-content-one wow fadeInUp delay-0-4s">
                             <div class="section-title mb-45">
                                 <span class="sub-title mb-15">About digital solutions</span>
-                                <h2>Best web design solutions agency to growth</h2>
+                                <h2 id="mod5">Tenemos la mejor agencia de soluciones de diseño web.</h2>
                             </div>
                             <ul class="list-style-one">
                                 <li>
@@ -366,7 +369,7 @@
                                 <div class="col-xl-9">
                                     <div class="section-title mb-60">
                                         <span class="sub-title mb-15">Company Statistics</span>
-                                        <h2>We’ve some achievement from global partners</h2>
+                                        <h2 id="mod6">Tenemos algunos logros de socios globales</h2>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
@@ -846,7 +849,7 @@
                    <div class="col-xl-5 col-lg-6">
                        <div class="contact-info-area text-white rmb-75 wow fadeInLeft delay-0-2s">
                             <div class="section-title mb-55">
-                                <h2>Have any project on mind! feel free contact with us or <span>say hello</span></h2>
+                                <h2 id="mod7">No dude en ponerse en contacto con nosotros o decir <span>Hola</span></h2>
                             </div>
                             <div class="contact-info-wrap">
                                 <div class="contact-info-item">
@@ -1082,7 +1085,8 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
-    
+    <!-- Save Username -->
+    <script src="assets/js/saveusername.js"></script>
     <!-- Modal -->
     <script src="assets/js/prueba.js"></script>
 
