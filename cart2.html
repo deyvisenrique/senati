@@ -37,7 +37,7 @@
 <body class="home-three">
     <div class="page-wrapper">
 
-        <!-- Preloader -->
+        <!-- Preloaderr -->
         <div class="preloader"></div>
 
         <!-- main header -->
@@ -89,7 +89,7 @@
                                                         <li><a href="index1dark-onepage.html">Web Design Dark</a></li>
                                                         <li><a href="index2-onepage.html">Front End Services</a></li>
                                                         <li><a href="index2dark-onepage.html">Front End Services Dark</a></li>
-                                                        <li><a href="index3-onepage.html">Website Builder</a></li>
+                                                        <li><a href="index3-onepage.html">Websitee Builder</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -228,11 +228,11 @@
                                 <td>
                                     <div class="quantity-input">
                                         <button class="quantity-down">--</button>
-                                        <input class="quantity" type="text" value="2" name="quantity">
+                                        <input class="quantity" type="text" value="1" name="quantity">
                                         <button class="quantity-up">+</button>
                                     </div>
                                 </td>
-                                <td><b class="price">130</b></td>
+                                <td><b class="price">65</b></td>
                                 <td><button type="button" class="close">×</button></td>
                             </tr>
                             <tr>
@@ -249,6 +249,53 @@
                                 <td><b class="price">80</b></td>
                                 <td><button type="button" class="close">×</button></td>
                             </tr>
+                            <script>
+                                let price = document.querySelectorAll("span[class = price]");
+                                let valor = document.querySelectorAll(".quantity");
+                                let Total = document.querySelectorAll("b[class = 'price']");                               
+                                let btnAumentar = document.querySelectorAll("button[class = 'quantity-up']");
+            
+                                let btnDismi = document.querySelectorAll("button[class = 'quantity-down']");
+                                let aumentar = [].slice.call(btnAumentar);
+                                let disminuir = [].slice.call(btnDismi);
+                                
+                                let Tootal = 0;
+                                function suma(valor1){
+                                }
+                                aumentar.forEach(function(items,idx){                                  
+                                    items.addEventListener('click', function(){
+                                        var valor1 = parseInt(valor[idx].value); 
+                                        valor1 +=1;
+                                        Tootal = price[idx].innerHTML * valor1
+                                        Total[idx].innerHTML = Tootal;
+                                        console.log(Tootal);
+                                    })
+                                })
+                                disminuir.forEach(function(items,idx){
+                                    items.addEventListener("click",function(e){
+                                        var valor1 = parseInt(valor[idx].value);
+                                        if (valor1 == 1){
+                                            valor1 = 1;
+                                            
+                                        }else{
+                                            valor1 -= 1;
+                                            Tootal = price[idx].innerHTML * valor1
+                                            Total[idx].innerHTML = Tootal;
+                                            console.log(Tootal);
+                                        }
+
+                                    })
+                                });
+                               
+                                
+                               
+                             
+                                
+                             
+                               
+
+                               
+                            </script>
                         </tbody>
                     </table>
                 </div>
