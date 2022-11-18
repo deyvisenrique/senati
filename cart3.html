@@ -219,7 +219,7 @@
                                     </div>
                                 </td>
                                 <td><b class="price">70</b></td>
-                                <td><button type="button" class="close">×</button></td>
+                                <td><button type="button" class="borrar">×</button></td>
                             </tr>
                             <tr>
                                 <td><img src="assets/images/widget/news2.jpg" alt="Product"></td>
@@ -233,7 +233,7 @@
                                     </div>
                                 </td>
                                 <td><b class="price">130</b></td>
-                                <td><button type="button" class="close">×</button></td>
+                                <td><button type="button" class="borrar">×</button></td>
                             </tr>
                             <tr>
                                 <td><img src="assets/images/widget/news3.jpg" alt="Product"></td>
@@ -247,7 +247,7 @@
                                     </div>
                                 </td>
                                 <td><b class="price">80</b></td>
-                                <td><button type="button" class="close">×</button></td>
+                                <td><button type="button" class="borrar">×</button></td>
                             </tr>
                         </tbody>
                     </table>
@@ -424,6 +424,13 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
+
+    <script>
+        $(document).on('click', '.borrar', function(event) {
+        event.preventDefault();
+        $(this).closest('tr').remove();
+        });
+    </script>
 
 </body>
 </html>
