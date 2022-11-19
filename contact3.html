@@ -465,7 +465,24 @@
 
     </div>
     <!--End pagewrapper-->
-   
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+// Tu codigo....
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxPAiBilzWSeGOxFP0Emp82JowxbNYVmw8RF4csdsqEJMCEbdIAVKrMN65mk6umHwo/exec'
+    const form = document.getElementById('contactForm')
+            console.log(form)
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => console.log(response))
+            .catch(error => alert('Error al guardar datos'))
+    })
+});
+    
+</script>
     
     <!-- Jquery -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
