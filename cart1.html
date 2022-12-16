@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Title -->
     <title>Oxence - Web Design Company HTML Template || Cart</title>
     <!-- Favicon Icon -->
@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
     
 </head>
 <body class="home-three">
@@ -252,14 +253,20 @@
                         </tbody>
                     </table>
                 </div>
+                
+
+                <script src="cupon.js"></script>
+
+
                 <div class="row text-center text-lg-left align-items-center">
                     <div class="col-lg-6">
                         <div class="discount-wrapper mb-30 wow fadeInLeft delay-0-2s">
-                            <form action="#" class="d-sm-flex justify-content-center justify-content-lg-start">
-                                <input type="text" placeholder="Coupon Code" required>
-                                <button class="theme-btn flex-none" type="submit">apply Coupon <i class="fas fa-angle-double-right"></i></button>
-                            </form>
+                            <div class="d-sm-flex justify-content-center justify-content-lg-start">
+                                <input id="cupon"type="text" placeholder="Codigo de cupon">
+                                <button onclick="cup()" class="theme-btn flex-none" type="submit">Aplicar cupon <i class="fas fa-angle-double-right"></i></button>
+                            </div>
                         </div>
+                        
                     </div>
                     <div class="col-lg-6">
                         <div class="update-shopping mb-30 text-lg-end wow fadeInRight delay-0-2s">
@@ -268,27 +275,33 @@
                         </div>
                     </div>
                 </div>
+
+         
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="shoping-cart-total pt-20 wow fadeInUp delay-0-2s">
-                            <h4 class="form-title mb-25 text-center">Cart Totals</h4>
+                            <h4 class="form-title mb-25 text-center">Totales del carrito</h4>
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td>Cart Subtotal</td>
+                                        <td>Subtotal del carrito</td>
                                         <td><span class="price">280</span></td>
                                     </tr>
                                     <tr>
-                                        <td>Shipping Fee</td>
+                                        <td>Gastos de envío</td>
                                         <td><span class="price">10.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="mensaje" > </td>
+                                        <td><span id="prec"></span></td>
                                     </tr>
                                     <tr>
                                         <td>Vat</td>
                                         <td>$0.00</td>
                                     </tr>
-                                    <tr>
-                                        <td><strong>Order Total</strong></td>
-                                        <td><b class="price">290</b></td>
+                                    <tr>  
+                                        <td><strong>TOTAL</strong></td>
+                                        <td><b id="preci"></b></td>
                                     </tr>
                                 </tbody>
                             </table>
